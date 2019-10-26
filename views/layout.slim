@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"
+    title Лингвофест, Питер '19
+    link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"
+    link href="assets/css/reset.css" rel="stylesheet"
+    link href="assets/css/reveal.min.css" rel="stylesheet"
+    link href="assets/css/theme/roboto.css" rel="stylesheet"
+  body
+    .reveal
+      .slides
+        == yield
+
+    script src="assets/js/reveal.min.js" 
+
+    javascript:
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        hash: true,
+        center: true,
+        transition: 'none',
+        viewDistance: 3,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        ]
+      });
