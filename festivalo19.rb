@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-set :public_folder, 'public'
+set :public_folder, 'docs'
 
 class Festivalo19 < Sinatra::Base
   get '/' do
