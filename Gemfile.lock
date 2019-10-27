@@ -3,7 +3,9 @@ GEM
   specs:
     ast (2.4.0)
     daemons (1.3.1)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
+    ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
     jaro_winkler (1.5.3)
     listen (3.2.0)
@@ -47,6 +49,7 @@ GEM
     unicode-display_width (1.6.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
